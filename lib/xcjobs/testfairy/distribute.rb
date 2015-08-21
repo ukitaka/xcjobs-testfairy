@@ -37,7 +37,7 @@ module XCJobs
         namespace :distribute do
           desc 'upload IPA to TestFairy'
           task :testfairy do
-            upload('http://app.testfairy.com/api/upload', form_data)
+            upload('https://app.testfairy.com/api/upload/', form_data)
           end
         end
       end
